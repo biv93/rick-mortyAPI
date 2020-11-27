@@ -1,0 +1,183 @@
+button {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .4rem;
+  border: 0;
+  box-shadow: 5px 5px 0px #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Gotham';
+}
+
+html body {
+  background-color: #24282E;
+}
+
+html body #headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+html body #headerContainer h1 {
+  font-size: 7rem;
+}
+
+html body #headerContainer img {
+  height: 6rem;
+}
+
+html body #buttonContainer {
+  background-color: #54CC44;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+html body #buttonContainer #personaggiBtn {
+  border: 4px solid black;
+  background-color: transparent;
+}
+
+html body #buttonContainer #rimuoviPersonaggi {
+  display: none;
+  background-color: #ff002f;
+  border: 4px solid #ff002f;
+  color: #fff;
+}
+
+html body #container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 3rem;
+}
+
+html body #container .count {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+html body #container .count h3 {
+  color: #FF9801;
+  background-color: #3C3E45;
+  padding: 1.5rem;
+  border-radius: .4rem;
+  font-size: 1.5rem;
+  margin: 0;
+  display: inline;
+  margin: auto;
+}
+
+html body #container .card {
+  border-radius: 2%;
+  background-color: #3C3E45;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 10px -1px, rgba(0, 0, 0, 0.9) 0px 2px 10px -1px;
+  display: flex;
+  flex-grow: 1;
+  margin: 2rem .6rem;
+}
+
+html body #container .card .textContainer {
+  padding: 2rem;
+}
+
+html body #container .card .textContainer h2 {
+  font-size: 3rem;
+}
+
+html body #container .card .textContainer strong {
+  background-color: #54CC44;
+  font-size: 1.8rem;
+  display: block;
+  padding: 1rem;
+}
+
+html body #container .card .textContainer span {
+  color: #a9adbd;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  display: block;
+}
+
+html body #container .card .textContainer #tv {
+  margin: 1rem 0;
+}
+
+html body #container .card .textContainer #tv i {
+  font-size: 1.8rem;
+  margin-right: .8rem;
+}
+
+html body #container .card .textContainer #tv h3 {
+  display: inline;
+  font-size: 1.5em;
+}
+
+html body #container .card .textContainer #removeBtn {
+  background-color: #ff002f;
+  color: #fff;
+  transition: .5s ease-out;
+  transition-property: background-color,color,box-shadow;
+}
+
+html body #container .card .textContainer #removeBtn:hover {
+  background-color: #fff;
+  color: #ff002f;
+  transition: .5s ease-out;
+  transition-property: background-color,color,box-shadow;
+  box-shadow: 15px 15px 0px #ff002f;
+}
+
+#modal.active {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal.active .modal-bck {
+  background-color: #fff;
+  width: 40rem;
+}
+
+#modal.active .modal-bck h2 {
+  background-color: #ff002f;
+  color: #fff;
+  margin: 0;
+  padding: 2rem;
+}
+
+#modal.active .modal-bck #button-modal-container {
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+#modal.active .modal-bck #button-modal-container button {
+  margin: 1rem;
+}
+
+#modal.active .modal-bck #button-modal-container button#decline {
+  background-color: #fff;
+  border: 4px solid #000000;
+}
+
+#modal.active .modal-bck #button-modal-container button#confirm {
+  color: #fff;
+  background-color: #ff002f;
+  border: 4px solid #ff002f;
+}

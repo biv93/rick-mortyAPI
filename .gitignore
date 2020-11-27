@@ -1,0 +1,8 @@
+#igore this file
+.vscode
+cors.js
+hotel.json
+main.js
+*.scss
+/assets/scss
+.DS_Store
